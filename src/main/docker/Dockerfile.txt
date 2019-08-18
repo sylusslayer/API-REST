@@ -1,0 +1,3 @@
+FROM frolvlad/alpine-oraclejdk8:slim
+MAINTAINER cd.bo17@gmail.com
+ADD micro
