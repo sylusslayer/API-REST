@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.refinitiv.carlos</groupId>
 	<artifactId>API-REST</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>API-REST</name>
 	<description>Prueba Refinitiv</description>
 
@@ -67,6 +67,13 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <configuration>
+	                <fork>true</fork>
+	                <executable>C:\Program Files\Java\jdk1.8.0_221\bin\javac.exe</executable>
+	            </configuration>
+	        </plugin>
 		</plugins>
 	</build>
 

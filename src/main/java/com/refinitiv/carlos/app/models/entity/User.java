@@ -40,7 +40,7 @@ public class User implements Serializable{
 	@Temporal(TemporalType.DATE)
 	private Date createdAt;
 	
-	@OneToMany(mappedBy="user", cascade=CascadeType.DETACH)
+	@OneToMany(mappedBy="user", cascade=CascadeType.DETACH, orphanRemoval = true)
 	@JsonManagedReference
 	private List<Account> accountList;
 
